@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glympse.android.historydemo"
+    android:versionCode="9"
+    android:versionName="0.1"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="23" />
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
+    <!-- Don't require any features -->
+    <uses-feature android:name="android.hardware.location"         android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps"     android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony"        android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen"      android:required="false" />
+    
+    <!-- GLYMPSE API - Used to query network connection status before attempting network activity -->
+    <!-- 	Docs: 	 Allows applications to access information about networks -->
+    <!-- 	Install: View network connections -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GLYMPSE API - Used to create a default user profile (nickname/avatar) -->
+    <!-- Optional but highly recommended -->
+    <!--    Docs:    Allows an application to read the user's contacts data. -->
+    <!--    Install: Read your contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <activity
+            android:name=".GlympseHistoryDemoActivity"
+            android:label="@string/app_name"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" >
+
+            <!-- This allows us to be launched by the user -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        
+        <!-- GLYMPSE API - This is required to be notified, when service is restarted. -->
+        <receiver 
+            android:name=".GlympseWrapper$ServiceReceiver" 
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.glympse.android.hal.service.STARTED" />
+            </intent-filter>
+        </receiver>     
+
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+    package="com.glympse.android.pushdemo"
+    android:versionCode="9"
+    android:versionName="0.1"
+    android:installLocation="auto" >
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
+    <!-- Don't require any features -->
+    <uses-feature android:name="android.hardware.location"         android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps"     android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony"        android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen"      android:required="false" />
+    
+    <!-- GLYMPSE API - Used to query network connection status before attempting network activity -->
+    <!-- 	Docs: 	 Allows applications to access information about networks -->
+    <!-- 	Install: View network connections -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GLYMPSE API - Used to create a default user profile (nickname/avatar) -->
+    <!-- Optional but highly recommended -->
+    <!--    Docs:    Allows an application to read the user's contacts data. -->
+    <!--    Install: Read your contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+    
+    <!-- GLYMPSE/GCM - GCM requires a Google account (necessary only if if the device is running a version lower than Android 4.0.4). -->
+    <!--    Docs:    Allows access to the list of accounts in the Accounts Service  -->
+    <!--    Install: Your accounts: find accounts on the device -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    <!-- GLYMPSE/GCM - Needed to receive PUSH notifications. -->
+    <!--    Docs:    Only this application can receive the messages and registration result. -->
+    <permission android:name="com.glympse.android.pushdemo.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.glympse.android.pushdemo.permission.C2D_MESSAGE" />
+
+    <!-- GLYMPSE/GCM - Needed to receive PUSH notifications. -->
+    <!--    Docs:    This app has permission to register and receive message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <!-- GLYMPSE/ADM - Needed to receive ADM Push notifications --> 
+    <!-- 	Docs: This permission ensures that no other application can intercept your ADM messages. -->
+    <permission android:name="com.glympse.android.pushdemo.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.glympse.android.pushdemo.permission.RECEIVE_ADM_MESSAGE"/>
+	
+	<!-- This permission allows your app access to receive push notifications from ADM. -->
+	<uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        >
+        
+        <activity
+            android:name=".GlympsePushDemoActivity"
+            android:label="@string/app_name"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            >
+
+            <!-- This allows us to be launched by the user -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity> 
+        
+        <!-- GLYMPSE API - This is required to be notified, when service is restarted. -->
+        <receiver 
+            android:name=".GlympseWrapper$ServiceReceiver" 
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.glympse.android.hal.service.STARTED" />
+            </intent-filter>
+        </receiver>
+        
+        <meta-data android:name="AmazonAPIKey" android:value="@string/api_key"/>
+        
+		<!--  Declare your ADMMessageHandlerBase implementation as a service -->
+        <service android:name=".ADMMessageHandler" 
+            android:exported="false" />
+        
+        <!-- You must explicitly enable ADM and declare whether your app cannot work without
+         ADM (android:required="true") or can work without ADM (android:required="false").
+         If you specify android:required="false", your app must degrade gracefully if ADM
+         is unavailable. -->
+        <amazon:enable-feature
+      		android:name="com.amazon.device.messaging"
+            android:required="false"/>
+		 
+		<!-- ADM -->
+		<receiver
+		    android:name=".ADMMessageHandler$Receiver"
+		    android:permission="com.amazon.device.messaging.permission.SEND" >
+		 
+		    <!-- To interact with ADM, your app must listen for the following intents. -->
+		    <intent-filter>
+				<action android:name="com.amazon.device.messaging.intent.REGISTRATION" />
+				<action android:name="com.amazon.device.messaging.intent.RECEIVE" />
+				 
+				<category android:name="com.glympse.android.pushdemo" />
+		    </intent-filter>
+		</receiver>
+
+    </application>
+
+</manifest>

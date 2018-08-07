@@ -1,0 +1,6 @@
+include ':sendDemo'
+include ':GlympseApi'
+include ':GlympseApiControls'
+
+project(':GlympseApi').projectDir = new File('../GlympseApi')
+project(':GlympseApiControls').projectDir = new File('../../lib/GlympseApiControls')

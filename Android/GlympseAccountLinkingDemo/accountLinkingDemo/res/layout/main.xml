@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:gravity="center"
+            android:textColor="#F58A17"
+            android:layout_margin="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <ProgressBar
+            android:id="@+id/activity"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:indeterminateOnly="true" />
+        
+        <Button
+            android:id="@+id/facebook_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:onClick="doFacebookLogin"
+            android:visibility="invisible"
+            android:text="Facebook Login" />
+        
+        <Button
+            android:id="@+id/twitter_login"
+            android:layout_margin="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="doTwitterLogin"
+            android:visibility="invisible"
+            android:text="Twitter Login" />
+
+        <Button
+            android:id="@+id/google_login"
+            android:layout_margin="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="doGoogleLogin"
+            android:visibility="invisible"
+            android:text="Google+ Login" />
+        
+        <Button
+            android:id="@+id/skip_login"
+            android:layout_margin="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="skipLogin"
+            android:visibility="invisible"
+            android:text="Skip Login" />
+        
+    </LinearLayout>
+
+</ScrollView>

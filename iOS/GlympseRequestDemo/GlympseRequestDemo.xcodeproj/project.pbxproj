@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C1EF4191ED8911B00BB96DB /* GLYSMSJob.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF068174308B100F61CE1 /* GLYSMSJob.mm */; };
+		9C1EF41C1ED8914500BB96DB /* GlympseWrapperARC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EF41A1ED8914500BB96DB /* GlympseWrapperARC.mm */; };
+		9C8576F51DC169A400FED788 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8576F41DC169A400FED788 /* CoreMotion.framework */; };
+		9C8576F71DC169AA00FED788 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8576F61DC169AA00FED788 /* libz.tbd */; };
+		9C8576F91DC169B500FED788 /* libGlympseApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8576F81DC169B500FED788 /* libGlympseApi.a */; };
+		AA010B01170E419F00CD6E5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA010B00170E419F00CD6E5F /* UIKit.framework */; };
+		AA010B03170E419F00CD6E5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA010B02170E419F00CD6E5F /* Foundation.framework */; };
+		AA010B05170E419F00CD6E5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA010B04170E419F00CD6E5F /* CoreGraphics.framework */; };
+		AA010B0B170E419F00CD6E5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA010B09170E419F00CD6E5F /* InfoPlist.strings */; };
+		AA010B0D170E419F00CD6E5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA010B0C170E419F00CD6E5F /* main.m */; };
+		AA010B11170E419F00CD6E5F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA010B10170E419F00CD6E5F /* AppDelegate.mm */; };
+		AA010B13170E419F00CD6E5F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AA010B12170E419F00CD6E5F /* Default.png */; };
+		AA010B15170E419F00CD6E5F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA010B14170E419F00CD6E5F /* Default@2x.png */; };
+		AA010B17170E419F00CD6E5F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA010B16170E419F00CD6E5F /* Default-568h@2x.png */; };
+		AA0973F6170E4BBE00B07F9A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0973F5170E4BBE00B07F9A /* Security.framework */; };
+		AA0973F8170E4BC600B07F9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0973F7170E4BC600B07F9A /* CoreLocation.framework */; };
+		AA0973FA170E4BCD00B07F9A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0973F9170E4BCD00B07F9A /* EventKit.framework */; };
+		AA0973FC170E4BD800B07F9A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0973FB170E4BD800B07F9A /* CFNetwork.framework */; };
+		AA0973FE170E4BDF00B07F9A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0973FD170E4BDF00B07F9A /* MessageUI.framework */; };
+		AA8E4621171E0BE70091C650 /* RequestMainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8E461F171E06610091C650 /* RequestMainViewController.mm */; };
+		AA8E4622171E0BF00091C650 /* RequestMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8E4620171E06610091C650 /* RequestMainViewController.xib */; };
+		AAB517CB171DDFA30046FEA6 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB517CA171DDFA30046FEA6 /* AddressBook.framework */; };
+		AAB517D1171DE0840046FEA6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB517D0171DE0840046FEA6 /* icon.png */; };
+		AAB517D3171DE0880046FEA6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB517D2171DE0880046FEA6 /* icon@2x.png */; };
+		E9A32DAF182C23D100ED5C3D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A32DAE182C23D100ED5C3D /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C1EF41A1ED8914500BB96DB /* GlympseWrapperARC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GlympseWrapperARC.mm; path = ../../Common/GlympseWrapperARC.mm; sourceTree = "<group>"; };
+		9C1EF41B1ED8914500BB96DB /* GlympseWrapperARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlympseWrapperARC.h; path = ../../Common/GlympseWrapperARC.h; sourceTree = "<group>"; };
+		9C8576F41DC169A400FED788 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		9C8576F61DC169AA00FED788 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9C8576F81DC169B500FED788 /* libGlympseApi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGlympseApi.a; path = "../../lib/GlympseApi/lib/libc++/libGlympseApi.a"; sourceTree = "<group>"; };
+		AA010AFD170E419F00CD6E5F /* GlyFulRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlyFulRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA010B00170E419F00CD6E5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA010B02170E419F00CD6E5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA010B04170E419F00CD6E5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA010B08170E419F00CD6E5F /* GlympseRequestDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlympseRequestDemo-Info.plist"; sourceTree = "<group>"; };
+		AA010B0A170E419F00CD6E5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA010B0C170E419F00CD6E5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA010B0E170E419F00CD6E5F /* GlympseRequestDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlympseRequestDemo-Prefix.pch"; sourceTree = "<group>"; };
+		AA010B0F170E419F00CD6E5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA010B10170E419F00CD6E5F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		AA010B12170E419F00CD6E5F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AA010B14170E419F00CD6E5F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AA010B16170E419F00CD6E5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AA0973F5170E4BBE00B07F9A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AA0973F7170E4BC600B07F9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AA0973F9170E4BCD00B07F9A /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		AA0973FB170E4BD800B07F9A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AA0973FD170E4BDF00B07F9A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AA8E461E171E06610091C650 /* RequestMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestMainViewController.h; sourceTree = "<group>"; };
+		AA8E461F171E06610091C650 /* RequestMainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RequestMainViewController.mm; sourceTree = "<group>"; };
+		AA8E4620171E06610091C650 /* RequestMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestMainViewController.xib; sourceTree = "<group>"; };
+		AA9CF067174308B100F61CE1 /* GLYSMSJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLYSMSJob.h; path = ../../../controls/GLYCommon/GLYSMSJob.h; sourceTree = "<group>"; };
+		AA9CF068174308B100F61CE1 /* GLYSMSJob.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLYSMSJob.mm; path = ../../../controls/GLYCommon/GLYSMSJob.mm; sourceTree = "<group>"; };
+		AAB517CA171DDFA30046FEA6 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		AAB517D0171DE0840046FEA6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AAB517D2171DE0880046FEA6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		E9A32DAE182C23D100ED5C3D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA010AFA170E419F00CD6E5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8576F91DC169B500FED788 /* libGlympseApi.a in Frameworks */,
+				9C8576F71DC169AA00FED788 /* libz.tbd in Frameworks */,
+				9C8576F51DC169A400FED788 /* CoreMotion.framework in Frameworks */,
+				AA0973F8170E4BC600B07F9A /* CoreLocation.framework in Frameworks */,
+				AA0973FC170E4BD800B07F9A /* CFNetwork.framework in Frameworks */,
+				AA0973F6170E4BBE00B07F9A /* Security.framework in Frameworks */,
+				AA0973FE170E4BDF00B07F9A /* MessageUI.framework in Frameworks */,
+				AAB517CB171DDFA30046FEA6 /* AddressBook.framework in Frameworks */,
+				AA0973FA170E4BCD00B07F9A /* EventKit.framework in Frameworks */,
+				E9A32DAF182C23D100ED5C3D /* SystemConfiguration.framework in Frameworks */,
+				AA010B05170E419F00CD6E5F /* CoreGraphics.framework in Frameworks */,
+				AA010B03170E419F00CD6E5F /* Foundation.framework in Frameworks */,
+				AA010B01170E419F00CD6E5F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA010AF4170E419F00CD6E5F = {
+			isa = PBXGroup;
+			children = (
+				AA010B06170E419F00CD6E5F /* GlympseRequestDemo */,
+				AA010AFF170E419F00CD6E5F /* Frameworks */,
+				AA010AFE170E419F00CD6E5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA010AFE170E419F00CD6E5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA010AFD170E419F00CD6E5F /* GlyFulRequest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA010AFF170E419F00CD6E5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C8576F81DC169B500FED788 /* libGlympseApi.a */,
+				9C8576F61DC169AA00FED788 /* libz.tbd */,
+				9C8576F41DC169A400FED788 /* CoreMotion.framework */,
+				E9A32DAE182C23D100ED5C3D /* SystemConfiguration.framework */,
+				AAB517CA171DDFA30046FEA6 /* AddressBook.framework */,
+				AA0973FB170E4BD800B07F9A /* CFNetwork.framework */,
+				AA010B04170E419F00CD6E5F /* CoreGraphics.framework */,
+				AA0973F7170E4BC600B07F9A /* CoreLocation.framework */,
+				AA0973F9170E4BCD00B07F9A /* EventKit.framework */,
+				AA010B02170E419F00CD6E5F /* Foundation.framework */,
+				AA0973FD170E4BDF00B07F9A /* MessageUI.framework */,
+				AA0973F5170E4BBE00B07F9A /* Security.framework */,
+				AA010B00170E419F00CD6E5F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA010B06170E419F00CD6E5F /* GlympseRequestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9C1EF41A1ED8914500BB96DB /* GlympseWrapperARC.mm */,
+				9C1EF41B1ED8914500BB96DB /* GlympseWrapperARC.h */,
+				AA9CF0601742EDBD00F61CE1 /* GLYCommon */,
+				AA010B0F170E419F00CD6E5F /* AppDelegate.h */,
+				AA010B10170E419F00CD6E5F /* AppDelegate.mm */,
+				AA8E461E171E06610091C650 /* RequestMainViewController.h */,
+				AA8E461F171E06610091C650 /* RequestMainViewController.mm */,
+				AA8E4620171E06610091C650 /* RequestMainViewController.xib */,
+				AA010B07170E419F00CD6E5F /* Supporting Files */,
+			);
+			path = GlympseRequestDemo;
+			sourceTree = "<group>";
+		};
+		AA010B07170E419F00CD6E5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA010B16170E419F00CD6E5F /* Default-568h@2x.png */,
+				AA010B12170E419F00CD6E5F /* Default.png */,
+				AA010B14170E419F00CD6E5F /* Default@2x.png */,
+				AA010B08170E419F00CD6E5F /* GlympseRequestDemo-Info.plist */,
+				AA010B0E170E419F00CD6E5F /* GlympseRequestDemo-Prefix.pch */,
+				AAB517D0171DE0840046FEA6 /* icon.png */,
+				AAB517D2171DE0880046FEA6 /* icon@2x.png */,
+				AA010B09170E419F00CD6E5F /* InfoPlist.strings */,
+				AA010B0C170E419F00CD6E5F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA9CF0601742EDBD00F61CE1 /* GLYCommon */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CF067174308B100F61CE1 /* GLYSMSJob.h */,
+				AA9CF068174308B100F61CE1 /* GLYSMSJob.mm */,
+			);
+			name = GLYCommon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA010AFC170E419F00CD6E5F /* GlympseRequestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA010B1A170E419F00CD6E5F /* Build configuration list for PBXNativeTarget "GlympseRequestDemo" */;
+			buildPhases = (
+				AA010AF9170E419F00CD6E5F /* Sources */,
+				AA010AFA170E419F00CD6E5F /* Frameworks */,
+				AA010AFB170E419F00CD6E5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlympseRequestDemo;
+			productName = GlympseRequestDemo;
+			productReference = AA010AFD170E419F00CD6E5F /* GlyFulRequest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA010AF5170E419F00CD6E5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Glympse;
+				TargetAttributes = {
+					AA010AFC170E419F00CD6E5F = {
+						DevelopmentTeam = L3T8742S65;
+					};
+				};
+			};
+			buildConfigurationList = AA010AF8170E419F00CD6E5F /* Build configuration list for PBXProject "GlympseRequestDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA010AF4170E419F00CD6E5F;
+			productRefGroup = AA010AFE170E419F00CD6E5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA010AFC170E419F00CD6E5F /* GlympseRequestDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA010AFB170E419F00CD6E5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA010B0B170E419F00CD6E5F /* InfoPlist.strings in Resources */,
+				AA010B13170E419F00CD6E5F /* Default.png in Resources */,
+				AA010B15170E419F00CD6E5F /* Default@2x.png in Resources */,
+				AA010B17170E419F00CD6E5F /* Default-568h@2x.png in Resources */,
+				AAB517D1171DE0840046FEA6 /* icon.png in Resources */,
+				AAB517D3171DE0880046FEA6 /* icon@2x.png in Resources */,
+				AA8E4622171E0BF00091C650 /* RequestMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA010AF9170E419F00CD6E5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1EF4191ED8911B00BB96DB /* GLYSMSJob.mm in Sources */,
+				AA010B0D170E419F00CD6E5F /* main.m in Sources */,
+				9C1EF41C1ED8914500BB96DB /* GlympseWrapperARC.mm in Sources */,
+				AA010B11170E419F00CD6E5F /* AppDelegate.mm in Sources */,
+				AA8E4621171E0BE70091C650 /* RequestMainViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA010B09170E419F00CD6E5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA010B0A170E419F00CD6E5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA010B18170E419F00CD6E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = L3T8742S65;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../controls,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA010B19170E419F00CD6E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = L3T8742S65;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../controls,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA010B1B170E419F00CD6E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlympseRequestDemo/GlympseRequestDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../../lib/GlympseApi/include,
+					../../controls,
+					../Common,
+				);
+				INFOPLIST_FILE = "GlympseRequestDemo/GlympseRequestDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../lib/GlympseApi/lib/libc++",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GlyFulRequest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA010B1C170E419F00CD6E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlympseRequestDemo/GlympseRequestDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../../lib/GlympseApi/include,
+					../../controls,
+					../Common,
+				);
+				INFOPLIST_FILE = "GlympseRequestDemo/GlympseRequestDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../lib/GlympseApi/lib/libc++",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GlyFulRequest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA010AF8170E419F00CD6E5F /* Build configuration list for PBXProject "GlympseRequestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA010B18170E419F00CD6E5F /* Debug */,
+				AA010B19170E419F00CD6E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA010B1A170E419F00CD6E5F /* Build configuration list for PBXNativeTarget "GlympseRequestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA010B1B170E419F00CD6E5F /* Debug */,
+				AA010B1C170E419F00CD6E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA010AF5170E419F00CD6E5F /* Project object */;
+}

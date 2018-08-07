@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Trigger name"/>
+    <EditText 
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="name"/>
+    
+    <Button
+        android:id="@+id/recipient_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onRecipientTap"
+        android:text="Pick a recipient"/>
+    
+    <Button
+        android:id="@+id/duration_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onDurationTap"
+        android:text="Set duration (1 min default)"/>
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="8dp">
+	    <fragment
+	        android:id="@+id/map"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:name="com.glympse.android.triggersdemo.GoogleMapFragment"/>
+	    
+	    <com.glympse.android.triggersdemo.controls.GeofenceOverlay
+	        android:id="@+id/fence_overlay"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"/>
+    </RelativeLayout>
+    
+</LinearLayout>

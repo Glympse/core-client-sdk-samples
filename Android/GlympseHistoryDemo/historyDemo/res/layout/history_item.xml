@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/glympse_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/glympse_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/glympse_details"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_expire"
+            style="@style/GlympseButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:onClick="expireGlympse"
+            android:text="@string/expire"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/btn_plus15"
+            style="@style/GlympseButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:onClick="plusFifteenMins"
+            android:text="@string/plus15"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_modify"
+            style="@style/GlympseButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:onClick="modifyGlympse"
+            android:text="@string/modify"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/layout_expired_info"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingTop="6dp"
+	    android:paddingBottom="6dp"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="8dp" >
+	
+	    <TextView
+	        android:id="@+id/history_recipients"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textStyle="bold"
+	        android:ellipsize="marquee" />
+	    <TextView
+	        android:id="@+id/history_number_watched"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:ellipsize="end" />
+	    <TextView
+	        android:id="@+id/history_time_remaining"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:ellipsize="end" />
+	
+	</LinearLayout>
+</RelativeLayout>

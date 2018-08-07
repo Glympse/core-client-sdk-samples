@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.1'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+}
+
+dependencies {
+    implementation project(':GlympseApi')
+    implementation project(':GlympseApiControls')
+    implementation 'com.google.android.gms:play-services-base:15.+'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation "com.android.support:support-v4:27.+"
+}

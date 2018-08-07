@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Account Linking</string>
+    <string name="facebook_app_id">521095501352493</string>
+    <string name="twitter_api_key">kifqaaGilSGATTZquwYw3Ie5a</string>
+    <string name="twitter_api_secret">BDsCP8vkkY2jzoxSEtb080EV3gCrjf4U8XSDkTshAQL3xqw1qx</string>
+    <string name="twitter_oauth_url">http://www.glympse.com/oauth_callback</string>
+</resources>

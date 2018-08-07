@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.1'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+}
+
+dependencies {
+    implementation project(':GlympseApi')
+    implementation project(':GlympseApiControls')
+    implementation project(':GlympseApiPush')
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

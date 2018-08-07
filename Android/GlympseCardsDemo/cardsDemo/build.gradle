@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.1'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+}
+
+dependencies {
+    implementation project(':GlympseApi')
+    implementation project(':GlympseApiPush')
+    implementation 'com.android.support:recyclerview-v7:27.+'
+    implementation 'com.android.support:cardview-v7:27.+'
+    implementation 'com.android.support:design:27.+'
+    implementation 'com.android.support:support-v4:27.+'
+    implementation group: 'com.googlecode.libphonenumber', name: 'libphonenumber', version: '8.3.3'
+    implementation 'com.karumi:dexter:5.0.0'
+}

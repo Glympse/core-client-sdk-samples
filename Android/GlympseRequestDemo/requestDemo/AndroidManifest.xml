@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glympse.android.requestdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+    
+    <!-- REQUEST DEMO - Required to get self phone number -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+    <!-- GLYMPSE API - Used to send SMS messages programmatically -->    
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    
+    <!-- GLYMPSE API - Used to query network connection status before attempting network activity -->
+    <!-- 	Docs: 	 Allows applications to access information about networks -->
+    <!-- 	Install: View network connections -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GLYMPSE API - Used to create a default user profile (nickname/avatar) -->
+    <!-- Optional but highly recommended -->
+    <!--    Docs:    Allows an application to read the user's contacts data. -->
+    <!--    Install: Read your contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.glympse.android.requestdemo.RequestActivity"
+            android:label="@string/app_name" 
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- GLYMPSE API - This is required to be notified, when Glympse service is restarted. -->
+        <receiver 
+            android:name=".GlympseWrapper$ServiceReceiver" 
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.glympse.android.hal.service.STARTED" />
+            </intent-filter>
+        </receiver>            
+        
+    </application>
+
+</manifest>

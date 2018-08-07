@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Glympse Request Demo</string>    
+    
+    <string name="request_recipient">Phone number of request recipient</string>    
+    
+    <string name="send_regular_request">Send Regular Request</string>
+    <string name="send_group_request">Send Group Request</string>
+    
+    <string name="regular_explanation">
+        Glympse request will be sent to a person via SMS (using phone number specified above).
+        Reply will be sent over SMS to this phone.  
+    </string>
+    
+    <string name="group_explanation">
+        Glympse request will be sent to a person via SMS (using phone number specified above).
+        Reply will be sent to group name specifid below. You can use the following URI to view 
+        everyone who joins the group:     
+    </string>
+    
+    <string name="error_invalid_number">You must specify phone number to send request to.</string>
+    
+</resources>

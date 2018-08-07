@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Glympse History Demo</string>
+    <string name="button_send">Send</string>
+    <string name="button_exit">Exit</string>
+    <string name="failed_to_create">Failed to create</string>
+    <string name="recipients_send_label">comma separated list of recipients</string>
+    <string name="recipients_hint">email address, phone number, or link</string>
+    <string name="duration_hint">duration in minutes</string>
+    <string name="message_hint">optional message</string>
+    <string name="set_duration">Set Duration</string>
+    <string name="duration_label">Duration</string>
+    <string name="expire">Expire</string>
+    <string name="plus15">+15 mins</string>
+    <string name="modify">Modify</string>
+    <string name="sending_glympse_label">Sending Glympse</string>
+    <string name="history_syncing_to_server">Syncing to server</string>
+</resources>

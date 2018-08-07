@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:background="@color/glympse_orange_button_text_enabled" 
+    tools:context=".MainActivity">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0">
+        
+        <Button
+            android:id="@+id/trigger_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/action_button"
+            android:textColor="@color/button_text"
+            android:text="Triggers"
+            android:enabled="false"
+            android:onClick="onTriggerTap"/>
+        
+        <Button
+            android:id="@+id/event_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="@color/button_text"
+            android:background="@drawable/action_button"
+            android:text="Event Log"
+            android:onClick="onEventLogTap"/> 
+    </LinearLayout>
+        
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/view_pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"/>
+      
+</LinearLayout>    

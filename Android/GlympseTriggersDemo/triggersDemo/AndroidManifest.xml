@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glympse.android.triggersdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+    
+    <!-- GLYMPSE API - Needed by the api -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>    
+    
+    <!-- GLYMPSE API - Needed for basic access to the Internet -->
+    <!--    Docs:    Allows applications to open network sockets. -->
+    <!--    Install: Network communication: full Internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GLYMPSE API - Used to obtain cell tower and WiFi locations -->
+    <!--    Docs:    Allows an application to access coarse (e.g., Cell-ID, WiFi) location -->
+    <!--    Install: Your location: coarse (network-based) location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- GLYMPSE API - Used to access GPS location -->
+    <!--    Docs:    Allows an application to access fine (e.g., GPS) location -->
+    <!--    Install: Your location: fine (GPS) location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <!-- GLYMPSE API - Used to query network connection status before attempting network activity -->
+    <!--    Docs:    Allows applications to access information about networks -->
+    <!--    Install: View network connections -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GLYMPSE API - Used to create a default user profile (nickname/avatar) -->
+    <!-- Optional but highly recommended -->
+    <!--    Docs:    Allows an application to read the user's contacts data. -->
+    <!--    Install: Read your contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+    <!-- GLYMPSE API - Needed to send Glympses via SMS -->
+    <!--    Docs:    Allows an application to send SMS messages. -->
+    <!--    Install: Services that cost you money: send SMS messages -->
+    <uses-permission android:name="android.permission.SEND_SMS" />     
+    
+    <!-- TriggersDemo - Needed to register our geofences when the system boots up -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <!-- Google Maps -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- App must not be installed on the sd card or it won't be able to receive the on boot broadcast -->
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:installLocation="internalOnly"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" 
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AddTriggerActivity"
+            android:label="Add a trigger"
+            android:screenOrientation="portrait"/>
+        
+        <receiver 
+            android:name=".GlympseProximityReceiver" 
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.glympse.android.app.proximity.REGION" />
+            </intent-filter>
+        </receiver>        
+        
+        <!-- GMS -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <!-- Maps V2 api key -->
+        <meta-data
+		    android:name="com.google.android.maps.v2.API_KEY"
+		    android:value="!! Your Google Maps API key !!"/>
+        
+        <!-- GLYMPSE API - Background -->
+        <service
+            android:enabled="true"
+            android:name="com.glympse.android.hal.GlympseService"
+            android:label="GlympseApiService"
+            android:exported="false" />    
+            
+        <!-- GLYMPSE API - Geofencing -->
+        <receiver 
+            android:name="com.glympse.android.hal.ProximityReceiver" 
+            android:exported="false">
+	        <intent-filter>
+	            <action android:name="com.glympse.android.hal.proximity.REGION" />
+	        </intent-filter>
+        </receiver>
+        
+        <!-- Triggers Demo - On boot receiver -->
+        <receiver
+		    android:name=".OnBootReceiver"
+		    android:exported="true">
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>
+        
+    </application>
+
+</manifest>

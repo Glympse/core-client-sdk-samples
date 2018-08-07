@@ -1,0 +1,6 @@
+include ':cardsDemo'
+include ':GlympseApi'
+include ':GlympseApiPush'
+
+project(':GlympseApi').projectDir = new File('../GlympseApi')
+project(':GlympseApiPush').projectDir = new File('../GlympseApiPush')

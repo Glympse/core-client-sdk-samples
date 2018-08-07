@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+    
+    <TextView
+        android:id="@+id/label_recipients"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recipients_send_label" />
+
+    <EditText
+        android:id="@+id/edit_recipients"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_recipients"
+        android:inputType="textMultiLine"
+        android:hint="@string/recipients_hint" />
+
+    <TextView
+        android:id="@+id/label_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_recipients"
+        android:text="@string/message_hint" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_message"
+        android:inputType="textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine"
+        android:hint="@string/message_hint" />
+    
+    <TextView
+        android:id="@+id/label_duration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message"
+        android:text="@string/duration_label" />
+
+    <Button
+        android:id="@+id/button_duration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_duration"
+        android:onClick="onDurationClick"
+        android:text="@string/set_duration" 
+        android:layout_marginTop="5dp"/>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/glympse_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_duration"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/glympse_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/glympse_details"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_expire"
+            style="@style/GlympseButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:onClick="onExpireClick"
+            android:text="@string/expire"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/btn_plus15"
+            style="@style/GlympseButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:onClick="onPlus15Click"
+            android:text="@string/plus15"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_modify"
+            style="@style/GlympseButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:onClick="onModifyClick"
+            android:text="@string/modify"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onSendClick"
+            android:text="@string/button_send" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:onClick="onExitClick"
+            android:text="@string/button_exit" />
+    </LinearLayout>
+
+</RelativeLayout>
+    

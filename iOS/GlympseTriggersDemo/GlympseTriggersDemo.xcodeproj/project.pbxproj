@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C191ABE194B7B37009B84EB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE27B8D171F7DB90063016D /* icon.png */; };
+		9C191ABF194B7B3D009B84EB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE27B8F171F7DBE0063016D /* icon@2x.png */; };
+		9C191AC3194B7BB3009B84EB /* TriggersListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C191AC1194B7BB3009B84EB /* TriggersListViewController.mm */; };
+		9C191AC4194B7BB3009B84EB /* TriggersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C191AC2194B7BB3009B84EB /* TriggersListViewController.xib */; };
+		9C191AC9194B7EF6009B84EB /* GlympseWrapperARC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C191AC8194B7EF6009B84EB /* GlympseWrapperARC.mm */; };
+		9C7EEBF0194BAEAC00A1D5A2 /* TriggerTableViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C7EEBEE194BAEAC00A1D5A2 /* TriggerTableViewCell.mm */; };
+		9C7EEBF1194BAEAC00A1D5A2 /* TriggerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EEBEF194BAEAC00A1D5A2 /* TriggerTableViewCell.xib */; };
+		9C7EEBF6194BC17300A1D5A2 /* DemoTriggers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C7EEBF5194BC17300A1D5A2 /* DemoTriggers.mm */; };
+		9C8576EB1DC1680200FED788 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8576EA1DC1680200FED788 /* libz.tbd */; };
+		9C8576ED1DC1680D00FED788 /* libGlympseApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8576EC1DC1680D00FED788 /* libGlympseApi.a */; };
+		AA0E0FE817F4D30A00EC8CD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0E0FE717F4D30A00EC8CD7 /* SystemConfiguration.framework */; };
+		AA3F91E61897128800B13587 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE279BA171F3E5B0063016D /* Security.framework */; };
+		AA3F91E71897128F00B13587 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE279BE171F419A0063016D /* MessageUI.framework */; };
+		AA3F91EA1897130C00B13587 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE279B8171F3E510063016D /* EventKit.framework */; };
+		AA3F91EB1897135000B13587 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9E2E65171E1D8A004148C5 /* CoreGraphics.framework */; };
+		AA9E2E62171E1D8A004148C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9E2E61171E1D8A004148C5 /* UIKit.framework */; };
+		AA9E2E64171E1D8A004148C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9E2E63171E1D8A004148C5 /* Foundation.framework */; };
+		AA9E2E6C171E1D8A004148C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA9E2E6A171E1D8A004148C5 /* InfoPlist.strings */; };
+		AA9E2E6E171E1D8A004148C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9E2E6D171E1D8A004148C5 /* main.m */; };
+		AA9E2E74171E1D8A004148C5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9E2E73171E1D8A004148C5 /* Default.png */; };
+		AA9E2E76171E1D8A004148C5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9E2E75171E1D8A004148C5 /* Default@2x.png */; };
+		AA9E2E78171E1D8A004148C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9E2E77171E1D8A004148C5 /* Default-568h@2x.png */; };
+		AA9E2E91171E1F10004148C5 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA9E2E8A171E1F10004148C5 /* AppDelegate.mm */; };
+		AAB60BCF1815BE420093DA9E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB60BCE1815BE420093DA9E /* CoreMotion.framework */; };
+		AAE279B3171F3E250063016D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE279B2171F3E250063016D /* AddressBook.framework */; };
+		AAE279B5171F3E390063016D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE279B4171F3E390063016D /* CFNetwork.framework */; };
+		AAE279B7171F3E4A0063016D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE279B6171F3E4A0063016D /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C191AC0194B7BB3009B84EB /* TriggersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggersListViewController.h; sourceTree = "<group>"; };
+		9C191AC1194B7BB3009B84EB /* TriggersListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TriggersListViewController.mm; sourceTree = "<group>"; };
+		9C191AC2194B7BB3009B84EB /* TriggersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TriggersListViewController.xib; sourceTree = "<group>"; };
+		9C191AC7194B7EF6009B84EB /* GlympseWrapperARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlympseWrapperARC.h; path = ../../Common/GlympseWrapperARC.h; sourceTree = "<group>"; };
+		9C191AC8194B7EF6009B84EB /* GlympseWrapperARC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GlympseWrapperARC.mm; path = ../../Common/GlympseWrapperARC.mm; sourceTree = "<group>"; };
+		9C7EEBED194BAEAC00A1D5A2 /* TriggerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerTableViewCell.h; sourceTree = "<group>"; };
+		9C7EEBEE194BAEAC00A1D5A2 /* TriggerTableViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TriggerTableViewCell.mm; sourceTree = "<group>"; };
+		9C7EEBEF194BAEAC00A1D5A2 /* TriggerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TriggerTableViewCell.xib; sourceTree = "<group>"; };
+		9C7EEBF4194BC17300A1D5A2 /* DemoTriggers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTriggers.h; sourceTree = "<group>"; };
+		9C7EEBF5194BC17300A1D5A2 /* DemoTriggers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoTriggers.mm; sourceTree = "<group>"; };
+		9C8576EA1DC1680200FED788 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9C8576EC1DC1680D00FED788 /* libGlympseApi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGlympseApi.a; path = "../../lib/GlympseApi/lib/libc++/libGlympseApi.a"; sourceTree = "<group>"; };
+		AA0E0FE717F4D30A00EC8CD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA9E2E5E171E1D8A004148C5 /* GlympseTriggersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlympseTriggersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9E2E61171E1D8A004148C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA9E2E63171E1D8A004148C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA9E2E65171E1D8A004148C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA9E2E69171E1D8A004148C5 /* GlympseTriggersDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlympseTriggersDemo-Info.plist"; sourceTree = "<group>"; };
+		AA9E2E6B171E1D8A004148C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA9E2E6D171E1D8A004148C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA9E2E6F171E1D8A004148C5 /* GlympseTriggersDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlympseTriggersDemo-Prefix.pch"; sourceTree = "<group>"; };
+		AA9E2E70171E1D8A004148C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA9E2E73171E1D8A004148C5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AA9E2E75171E1D8A004148C5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AA9E2E77171E1D8A004148C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AA9E2E8A171E1F10004148C5 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		AAB60BCE1815BE420093DA9E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		AAE279B2171F3E250063016D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		AAE279B4171F3E390063016D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AAE279B6171F3E4A0063016D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AAE279B8171F3E510063016D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		AAE279BA171F3E5B0063016D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AAE279BE171F419A0063016D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AAE27B8D171F7DB90063016D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = GlympseTriggersDemo/icon.png; sourceTree = SOURCE_ROOT; };
+		AAE27B8F171F7DBE0063016D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "GlympseTriggersDemo/icon@2x.png"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA9E2E5B171E1D8A004148C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8576ED1DC1680D00FED788 /* libGlympseApi.a in Frameworks */,
+				9C8576EB1DC1680200FED788 /* libz.tbd in Frameworks */,
+				AAE279B3171F3E250063016D /* AddressBook.framework in Frameworks */,
+				AAE279B5171F3E390063016D /* CFNetwork.framework in Frameworks */,
+				AA3F91EB1897135000B13587 /* CoreGraphics.framework in Frameworks */,
+				AAE279B7171F3E4A0063016D /* CoreLocation.framework in Frameworks */,
+				AAB60BCF1815BE420093DA9E /* CoreMotion.framework in Frameworks */,
+				AA3F91EA1897130C00B13587 /* EventKit.framework in Frameworks */,
+				AA9E2E64171E1D8A004148C5 /* Foundation.framework in Frameworks */,
+				AA3F91E71897128F00B13587 /* MessageUI.framework in Frameworks */,
+				AA3F91E61897128800B13587 /* Security.framework in Frameworks */,
+				AA0E0FE817F4D30A00EC8CD7 /* SystemConfiguration.framework in Frameworks */,
+				AA9E2E62171E1D8A004148C5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA9E2E55171E1D8A004148C5 = {
+			isa = PBXGroup;
+			children = (
+				AA9E2E67171E1D8A004148C5 /* GlympseTriggersDemo */,
+				AA9E2E60171E1D8A004148C5 /* Frameworks */,
+				AA9E2E5F171E1D8A004148C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA9E2E5F171E1D8A004148C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA9E2E5E171E1D8A004148C5 /* GlympseTriggersDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA9E2E60171E1D8A004148C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C8576EC1DC1680D00FED788 /* libGlympseApi.a */,
+				9C8576EA1DC1680200FED788 /* libz.tbd */,
+				AAE279B2171F3E250063016D /* AddressBook.framework */,
+				AAB60BCE1815BE420093DA9E /* CoreMotion.framework */,
+				AA0E0FE717F4D30A00EC8CD7 /* SystemConfiguration.framework */,
+				AAE279B4171F3E390063016D /* CFNetwork.framework */,
+				AA9E2E65171E1D8A004148C5 /* CoreGraphics.framework */,
+				AAE279B6171F3E4A0063016D /* CoreLocation.framework */,
+				AAE279B8171F3E510063016D /* EventKit.framework */,
+				AA9E2E63171E1D8A004148C5 /* Foundation.framework */,
+				AAE279BE171F419A0063016D /* MessageUI.framework */,
+				AAE279BA171F3E5B0063016D /* Security.framework */,
+				AA9E2E61171E1D8A004148C5 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA9E2E67171E1D8A004148C5 /* GlympseTriggersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9C191AC7194B7EF6009B84EB /* GlympseWrapperARC.h */,
+				9C191AC8194B7EF6009B84EB /* GlympseWrapperARC.mm */,
+				AA9E2E70171E1D8A004148C5 /* AppDelegate.h */,
+				AA9E2E8A171E1F10004148C5 /* AppDelegate.mm */,
+				9C7EEBF4194BC17300A1D5A2 /* DemoTriggers.h */,
+				9C7EEBF5194BC17300A1D5A2 /* DemoTriggers.mm */,
+				9C7EEBED194BAEAC00A1D5A2 /* TriggerTableViewCell.h */,
+				9C7EEBEE194BAEAC00A1D5A2 /* TriggerTableViewCell.mm */,
+				9C7EEBEF194BAEAC00A1D5A2 /* TriggerTableViewCell.xib */,
+				9C191AC0194B7BB3009B84EB /* TriggersListViewController.h */,
+				9C191AC1194B7BB3009B84EB /* TriggersListViewController.mm */,
+				9C191AC2194B7BB3009B84EB /* TriggersListViewController.xib */,
+				AA9E2E68171E1D8A004148C5 /* Supporting Files */,
+			);
+			path = GlympseTriggersDemo;
+			sourceTree = "<group>";
+		};
+		AA9E2E68171E1D8A004148C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA9E2E69171E1D8A004148C5 /* GlympseTriggersDemo-Info.plist */,
+				AA9E2E6A171E1D8A004148C5 /* InfoPlist.strings */,
+				AA9E2E6D171E1D8A004148C5 /* main.m */,
+				AA9E2E6F171E1D8A004148C5 /* GlympseTriggersDemo-Prefix.pch */,
+				AAE27B8D171F7DB90063016D /* icon.png */,
+				AAE27B8F171F7DBE0063016D /* icon@2x.png */,
+				AA9E2E73171E1D8A004148C5 /* Default.png */,
+				AA9E2E75171E1D8A004148C5 /* Default@2x.png */,
+				AA9E2E77171E1D8A004148C5 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA9E2E5D171E1D8A004148C5 /* GlympseTriggersDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA9E2E7B171E1D8A004148C5 /* Build configuration list for PBXNativeTarget "GlympseTriggersDemo" */;
+			buildPhases = (
+				AA9E2E5A171E1D8A004148C5 /* Sources */,
+				AA9E2E5B171E1D8A004148C5 /* Frameworks */,
+				AA9E2E5C171E1D8A004148C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlympseTriggersDemo;
+			productName = GlympseHistoryDemo;
+			productReference = AA9E2E5E171E1D8A004148C5 /* GlympseTriggersDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA9E2E56171E1D8A004148C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Glympse;
+				TargetAttributes = {
+					AA9E2E5D171E1D8A004148C5 = {
+						DevelopmentTeam = L3T8742S65;
+					};
+				};
+			};
+			buildConfigurationList = AA9E2E59171E1D8A004148C5 /* Build configuration list for PBXProject "GlympseTriggersDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA9E2E55171E1D8A004148C5;
+			productRefGroup = AA9E2E5F171E1D8A004148C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA9E2E5D171E1D8A004148C5 /* GlympseTriggersDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA9E2E5C171E1D8A004148C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7EEBF1194BAEAC00A1D5A2 /* TriggerTableViewCell.xib in Resources */,
+				9C191ABF194B7B3D009B84EB /* icon@2x.png in Resources */,
+				9C191ABE194B7B37009B84EB /* icon.png in Resources */,
+				AA9E2E6C171E1D8A004148C5 /* InfoPlist.strings in Resources */,
+				AA9E2E74171E1D8A004148C5 /* Default.png in Resources */,
+				AA9E2E76171E1D8A004148C5 /* Default@2x.png in Resources */,
+				AA9E2E78171E1D8A004148C5 /* Default-568h@2x.png in Resources */,
+				9C191AC4194B7BB3009B84EB /* TriggersListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA9E2E5A171E1D8A004148C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9E2E6E171E1D8A004148C5 /* main.m in Sources */,
+				9C191AC3194B7BB3009B84EB /* TriggersListViewController.mm in Sources */,
+				9C7EEBF0194BAEAC00A1D5A2 /* TriggerTableViewCell.mm in Sources */,
+				AA9E2E91171E1F10004148C5 /* AppDelegate.mm in Sources */,
+				9C191AC9194B7EF6009B84EB /* GlympseWrapperARC.mm in Sources */,
+				9C7EEBF6194BC17300A1D5A2 /* DemoTriggers.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA9E2E6A171E1D8A004148C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA9E2E6B171E1D8A004148C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA9E2E79171E1D8A004148C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = L3T8742S65;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA9E2E7A171E1D8A004148C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = L3T8742S65;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA9E2E7C171E1D8A004148C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlympseTriggersDemo/GlympseTriggersDemo-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../lib/GlympseApi/include\"",
+					../../controls,
+					../Common,
+				);
+				INFOPLIST_FILE = "GlympseTriggersDemo/GlympseTriggersDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../lib/GlympseApi/lib/libc++",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GlympseTriggersDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA9E2E7D171E1D8A004148C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlympseTriggersDemo/GlympseTriggersDemo-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../lib/GlympseApi/include\"",
+					../../controls,
+					../Common,
+				);
+				INFOPLIST_FILE = "GlympseTriggersDemo/GlympseTriggersDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../lib/GlympseApi/lib/libc++",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GlympseTriggersDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA9E2E59171E1D8A004148C5 /* Build configuration list for PBXProject "GlympseTriggersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9E2E79171E1D8A004148C5 /* Debug */,
+				AA9E2E7A171E1D8A004148C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA9E2E7B171E1D8A004148C5 /* Build configuration list for PBXNativeTarget "GlympseTriggersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9E2E7C171E1D8A004148C5 /* Debug */,
+				AA9E2E7D171E1D8A004148C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA9E2E56171E1D8A004148C5 /* Project object */;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Glympse Invite Decoder Demo</string>
+    
+    <string name="invite_uri">Enter invite URI to analyze</string>
+    <string name="button_analyze">Analyze Invite URI</string>
+    
+    <string name="ticket_invite_encountered">Regular ticket invite was detected.</string>
+    <string name="invalid_invite_code">Invalid invite code was detected.</string>
+    <string name="wrong_server">Invite cannot be handled because API is pointed to different server.</string>
+    
+    <string name="group_invite_encountered">Group invite was encountered.</string>
+    
+    <string name="request_without_invite">Request invite was encountered, but no back address was specify to reply.</string>
+    
+    <string name="error_invalid_uri">You must specify URI to be analyzed.</string>
+    
+    <string name="button_expire_all">Expire All</string>
+    <string name="expire_explanation">
+        This will expire all tickets sent from this app. 
+    </string>
+
+</resources>

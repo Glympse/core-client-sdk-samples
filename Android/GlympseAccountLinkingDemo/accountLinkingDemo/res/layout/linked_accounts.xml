@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:descendantFocusability="beforeDescendants"
+	        android:focusableInTouchMode="true"
+	        android:padding="20dp" >
+	        
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Glympse Account"
+            android:gravity="center"
+            android:textColor="#F58A17"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+        	        
+                <!-- Avatar -->
+	            <LinearLayout 
+	                android:layout_margin="5dp"
+	                android:layout_marginTop="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#F58A17"
+	                android:orientation="horizontal">
+	                
+	                <com.glympse.android.ui.GLYAvatarView
+                        android:id="@+id/avatar"
+	                    android:padding="1dp"
+	                    android:layout_width="48dp"
+	                    android:layout_height="48dp"
+	                    android:src="@drawable/avatar" />
+	                
+	            </LinearLayout>
+
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+	            
+			        <!-- UID -->
+			        <LinearLayout 
+			            android:layout_margin="5dp"
+		                android:layout_marginTop="8dp"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal" >
+			            
+			            <TextView 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="Username: "/>
+			            <TextView 
+			                android:id="@+id/uid"
+			                android:layout_marginLeft="5dp"
+		                    android:textColor="#F58A17"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" />
+			            
+			        </LinearLayout>
+		        
+			        <!-- Nickname -->
+			        <LinearLayout 
+			            android:layout_margin="5dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal" >
+			            
+			            <TextView 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="Nickname: " />
+			            <TextView 
+			                android:id="@+id/nickname"
+                            android:layout_marginLeft="5dp"
+		                    android:textColor="#F58A17"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" />
+			            
+			        </LinearLayout>
+
+                </LinearLayout>
+			        	        
+	        </LinearLayout>
+	        
+	        <!-- Log out -->
+		    <Button
+		        android:id="@+id/logout_button"
+                android:layout_marginTop="10dp"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="Logout" 
+		        android:onClick="doLogOut" />
+	        
+	        <!-- Linked Accounts -->
+	        <TextView
+	            android:id="@+id/status"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Linked Accounts"
+	            android:gravity="center"
+	            android:textColor="#F58A17"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        
+	        <!-- Facebook -->
+	        <RelativeLayout 
+	            android:layout_margin="2dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	            
+	            <LinearLayout 
+	                android:id="@+id/facebook_logo"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F58A17"
+                    android:orientation="horizontal" >
+			        
+	                <ImageView
+	                    android:padding="1dp"
+	                    android:layout_width="36dp"
+	                    android:layout_height="36dp"
+	                    android:src="@drawable/facebook" />
+	                
+	            </LinearLayout>
+	            
+	            <TextView 
+	                android:id="@+id/facebook_username"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_toRightOf="@id/facebook_logo" />
+	            <Button 
+	                android:id="@+id/facebook_link"
+	                android:layout_width="80dp"
+	                android:layout_height="wrap_content" 
+	                android:layout_alignParentRight="true"
+	                android:onClick="toggleFacebook"
+	                android:enabled="true"
+	                android:text="Link" />
+	            
+	        </RelativeLayout>
+	        
+	        <!-- Twitter -->
+            <RelativeLayout 
+                android:layout_margin="2dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <LinearLayout 
+                    android:id="@+id/twitter_logo"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F58A17"
+                    android:orientation="horizontal" >
+	                
+                    <ImageView
+                        android:padding="1dp"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/twitter" />
+                    
+                </LinearLayout>
+                
+                <TextView 
+                    android:id="@+id/twitter_username"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/twitter_logo" />
+                <Button 
+                    android:id="@+id/twitter_link"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" 
+                    android:layout_alignParentRight="true"
+                    android:onClick="toggleTwitter"
+                    android:enabled="true"
+                    android:text="Link" />
+                
+            </RelativeLayout>
+	        
+            <!-- Google+ -->
+            <RelativeLayout 
+                android:layout_margin="2dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <LinearLayout 
+                    android:id="@+id/google_logo"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F58A17"
+                    android:orientation="horizontal" >
+                    
+                    <ImageView
+                        android:padding="1dp"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/google_plus" />
+                    
+                </LinearLayout>
+                
+                <TextView 
+                    android:id="@+id/google_username"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/google_logo" />
+                
+                <Button 
+                    android:id="@+id/google_link"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" 
+                    android:layout_alignParentRight="true"
+                    android:onClick="toggleGoogle"
+                    android:enabled="true"
+                    android:text="Link" />
+                
+            </RelativeLayout>          
+            
+	        <!-- Refresh -->
+	    	<Button
+                android:layout_marginTop="10dp"
+	    	    android:layout_width="200dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center"
+	    	    android:onClick="doRefresh" 
+	    	    android:text="Refresh" />
+	
+	    </LinearLayout>
+	
+	</ScrollView>
+
+</RelativeLayout>

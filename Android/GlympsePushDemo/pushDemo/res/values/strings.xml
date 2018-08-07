@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Glympse Push Demo</string>
+    <string name="button_create">Create</string>
+    <string name="url_label">URL:</string>
+    <string name="button_exit">Exit</string>
+    <string name="failed_to_create">Failed to create</string>
+    
+    <string name="api_key">eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJhcHBGYW1pbHlJZCI6ImFtem4xLmFwcGxpY2F0aW9uLjM1M2UyNWQxYWM4YzRhZDE5NTRjOTYxYWJmNjU5NThmIiwiaWQiOiJlOWI4ZTViNy1iZTk1LTExZTMtOTQwYi05OTYwNGFmZGJmY2UiLCJhcHBJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC5mYmVmNDUzNTdjM2M0MTBkOTVhMmRkNmE1NjYzMmI1ZiIsImlzcyI6IkFtYXpvbiIsInBrZyI6ImNvbS5nbHltcHNlLmFuZHJvaWQucHVzaGRlbW8iLCJ2ZXIiOiIyIiwiYXBwVmFyaWFudElkIjoiYW16bjEuYXBwbGljYXRpb24tY2xpZW50LmZiZWY0NTM1N2MzYzQxMGQ5NWEyZGQ2YTU2NjMyYjVmIiwidHlwZSI6IkFQSUtleSIsImlhdCI6IjEzOTY5MDM2ODMyMDciLCJjbGllbnRJZCI6ImFtem4xLmFwcGxpY2F0aW9uLW9hMi1jbGllbnQuNzdjZjIzNGU2NTg3NDg3ZGFiMDE1YjBiOWU4ZDc2ZWMiLCJhcHBzaWciOiI2OToyNDozQTozMzo5MTpGQjpFMzo3RjpBRTo4RDpBQTo5OTpGNDo4OTpDMjo2QyJ9.qYM/87BnloMhtwV3qhFOztmS2rqqQEvGVShTRXWaXij2u3rY8iJzuACJDOmB8fz13WouPYAC4l5mKIGUZgmxtyyMDpbLbLakOpzeUWzwYSEa5WV7aQpfAqR7TZ2gWOmtbu6JLFXRZBk4chB/hVGB7TOnbABELEj/QHFs65oqoLPQe3PEM6TLW2MHglYt0jTpNJDhqM6VgcEiXLbua7y8JRQ3yF3jwkZxLxJ8J/iSPLp149XzSjQzSUhCTk4RKV7XZWJoOnvzbR+p7jybzedU8EoZCS7+OKQw+3GrwUAul6fukaqCpnYwhQ79ZzjK8f1l9eL3Bh8VMxLDEppjBhDFUA==</string>
+</resources>

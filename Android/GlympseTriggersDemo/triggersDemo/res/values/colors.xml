@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="glympse_brand_supporting_light_orange">#F9A11B</color>
+    <color name="glympse_brand_supporting_light_orange_opaque">#7FF9A11B</color>
+    <color name="glympse_brand_supporting_dark_orange">#F05B22</color>
+</resources>

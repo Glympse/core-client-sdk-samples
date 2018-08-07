@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Glympse Triggers</string>
+    
+    <string name="main_triggers">Triggers</string>
+    
+    <string name="action_expire">Expire</string>    
+    <string name="action_add_trigger">Add trigger</string>
+    <string name="action_event_log">Event log</string>
+    <string name="action_save_trigger">Save trigger</string>
+
+</resources>

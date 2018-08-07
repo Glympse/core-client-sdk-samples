@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glympse.android.glympsemapdemoconversation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+    
+    <!-- GLYMPSE API - Needed by the api -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>    
+    
+    <!-- GLYMPSE API - Needed for basic access to the Internet -->
+    <!--    Docs:    Allows applications to open network sockets. -->
+    <!--    Install: Network communication: full Internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GLYMPSE API - Used to obtain cell tower and WiFi locations -->
+    <!--    Docs:    Allows an application to access coarse (e.g., Cell-ID, WiFi) location -->
+    <!--    Install: Your location: coarse (network-based) location -->
+    <!-- !!! - Request required for use in API 23+ -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- GLYMPSE API - Used to access GPS location -->
+    <!--    Docs:    Allows an application to access fine (e.g., GPS) location -->
+    <!--    Install: Your location: fine (GPS) location -->
+    <!-- !!! - Request required for use in API 23+ -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- !!! - Request required for use in API 23+ -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- !!! - Request required for use in API 23+ -->
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />    
+	<permission 
+	    android:name="com.glympse.android.glympsemapdemoconversation.permission.C2D_MESSAGE"     
+	    android:protectionLevel="signature" />
+	<uses-permission 
+	    android:name="com.glympse.android.glympsemapdemoconversation.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value=""/>
+        
+        <activity
+            android:name="com.glympse.android.glympsemapdemoconversation.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- GLYMPSE API - This is required for the Glympse service to work. -->
+        <service
+            android:enabled="true"
+            android:name="com.glympse.android.hal.GlympseService"
+            android:label="GlympseApiService"
+            android:exported="false"
+            >
+        </service>     
+        
+        <!-- GLYMPSE API - This is required to be notified, when service is restarted. -->
+        <receiver 
+            android:name="com.glympse.android.glympsemapdemoconversation.GlympseWrapper$ServiceReceiver" 
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.glympse.android.hal.service.STARTED" />
+            </intent-filter>
+        </receiver>
+		
+    </application>
+
+</manifest>
