@@ -1,8 +1,2 @@
 include ':contactsDemo'
-include ':GlympseApi'
-include ':GlympseApiContacts'
-include ':GlympseApiControls'
 
-project(':GlympseApi').projectDir = new File('../GlympseApi')
-project(':GlympseApiContacts').projectDir = new File('../../lib/GlympseApiContacts')
-project(':GlympseApiControls').projectDir = new File('../../lib/GlympseApiControls')

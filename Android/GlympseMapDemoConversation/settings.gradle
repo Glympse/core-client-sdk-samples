@@ -1,6 +1,2 @@
 include ':mapDemoConversation'
-include ':GlympseApi'
-include ':GlympseMap'
 
-project(':GlympseApi').projectDir = new File('../GlympseApi')
-project(':GlympseMap').projectDir = new File('../GlympseMap')

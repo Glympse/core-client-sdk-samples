@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+repositories {
+    maven {url "https://raw.github.com/Glympse/glympse-android-sdk-release/master"}
+}
+
 android {
     compileSdkVersion 27
     buildToolsVersion '28.0.1'
@@ -23,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation project(':GlympseApi')
-    implementation project(':GlympseMap')
+    implementation 'com.glympse:glympseapi:2.42.163'
+    implementation 'com.glympse:glympseapi-map:2.42.163'
     implementation 'com.google.android.gms:play-services-maps:15.+'
 }

@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+repositories {
+    maven {url "https://raw.github.com/Glympse/glympse-android-sdk-release/master"}
+}
+
 android {
     compileSdkVersion 27
     buildToolsVersion '28.0.1'
@@ -24,8 +28,8 @@ android {
 }
 
 dependencies {
-    implementation project(':GlympseApi')
-    implementation project(':GlympseApiControls')
+    implementation 'com.glympse:glympseapi:2.42.163'
+    implementation 'com.glympse:glympseapi-controls:2.42.163'
     implementation 'com.google.android.gms:play-services-base:15.+'
     implementation 'com.android.support:multidex:1.0.3'
     implementation "com.android.support:support-v4:27.+"

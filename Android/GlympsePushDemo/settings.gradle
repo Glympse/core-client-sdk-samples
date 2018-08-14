@@ -1,8 +1,2 @@
 include ':pushDemo'
-include ':GlympseApi'
-include ':GlympseApiControls'
-include ':GlympseApiPush'
 
-project(':GlympseApi').projectDir = new File('../GlympseApi')
-project(':GlympseApiControls').projectDir = new File('../../lib/GlympseApiControls')
-project(':GlympseApiPush').projectDir = new File('../GlympseApiPush')

@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+repositories {
+    maven {url "https://raw.github.com/Glympse/glympse-android-sdk-release/master"}
+}
+
 android {
     compileSdkVersion 27
     buildToolsVersion '28.0.1'
@@ -23,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation project(':GlympseApi')
+    implementation 'com.glympse:glympseapi:2.42.163'
     implementation 'com.facebook.android:facebook-android-sdk:4.20.0'
     implementation 'org.twitter4j:twitter4j-core:4.0.4'
     implementation 'com.google.android.gms:play-services-plus:15.+'

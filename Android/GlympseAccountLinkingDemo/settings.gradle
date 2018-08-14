@@ -1,4 +1,2 @@
 include ':accountLinkingDemo'
-include ':GlympseApi'
 
-project(':GlympseApi').projectDir = new File('../GlympseApi')

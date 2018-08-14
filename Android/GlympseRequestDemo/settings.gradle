@@ -1,4 +1,2 @@
 include ':requestDemo'
-include ':GlympseApi'
 
-project(':GlympseApi').projectDir = new File('../GlympseApi')
